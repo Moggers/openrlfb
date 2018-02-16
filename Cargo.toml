@@ -1,0 +1,11 @@
+[package]
+name = "openrlfb"
+version = "0.1.0"
+authors = ["Matt <mattkramara@gmail.com>"]
+
+[dependencies]
+amethyst = { path = "../amethyst" }
+libservo = { git = "https://github.com/servo/servo", rev = "5af219e8188f2e657c5711eb5def4c8e8065e29d" }
+gfx-backend-gl = { git = "https://github.com/gfx-rs/gfx" }
+glutin = "0.12"
+winit = "0.10"
