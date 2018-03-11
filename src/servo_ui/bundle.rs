@@ -1,6 +1,7 @@
 use amethyst::core::bundle::{ECSBundle, Result};
 use amethyst::ecs::DispatcherBuilder;
 use amethyst::prelude::World;
+use amethyst::renderer::TextureHandle;
 use super::ServoUiSystem;
 
 pub struct ServoUiBundle;

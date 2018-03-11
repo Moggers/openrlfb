@@ -4,8 +4,12 @@ version = "0.1.0"
 authors = ["Matt <mattkramara@gmail.com>"]
 
 [dependencies]
-amethyst = { path = "../amethyst" }
+amethyst = { path = "../amethyst"}
 libservo = { git = "https://github.com/servo/servo", rev = "5af219e8188f2e657c5711eb5def4c8e8065e29d" }
 gfx-backend-gl = { git = "https://github.com/gfx-rs/gfx" }
+gfx_device_gl = "0.15"
+gfx = "0.17"
+gfx_core = "0.8"
 glutin = "0.12"
 winit = "0.10"
+genmesh = "0.5"

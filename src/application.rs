@@ -3,7 +3,7 @@ use amethyst::Result;
 use amethyst::renderer::{DisplayConfig, DrawShaded, Event, Pipeline, PosNormTex, RenderBundle,
                          Stage};
 use boilerplate;
-use servo_ui::ServoUiBundle;
+use servo_ui::{ServoUiBundle, ServoUiPass};
 
 pub struct GameState;
 
@@ -19,7 +19,7 @@ impl State for GameState {
 pub fn run() -> Result<()> {
     let pipe = Pipeline::build().with_stage(
         Stage::with_backbuffer()
-            .clear_target([0.3, 0.3, 0.4, 1.0], 1.0)
+            .clear_target([0.2, 0.2, 0.2, 1.0], 0.)
             .with_pass(DrawShaded::<PosNormTex>::new()),
     );
 
